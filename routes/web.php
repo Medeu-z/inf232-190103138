@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('user/{name?}/{surname?}', function ($name="Zhaniya", $surname="Medeuova") {
-    return $name."  ".$surname;
-});
+Route::get('/name/{id}','App\Http\Controllers\StudentController@show');
+Route::get('/bd/{id}','App\Http\Controllers\StudentController@showbd');
+
