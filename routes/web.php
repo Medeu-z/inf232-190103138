@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-/*Route::get('/test', function () {
+Route::get('/test', function () {
     return view('welcome');
-});*/
+});
 Route::get('user/{name?}/{surname?}', function ($name="Zhaniya", $surname="Medeuova") {
     return $name."  ".$surname;
 });
